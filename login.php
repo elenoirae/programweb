@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_POST['login'])) {
-    $conexion = new mysqli("localhost", "root", "", "librerira");
+    $conexion = new mysqli("sql105.infinityfree.com", "if0_39155495", "TU_PASSWORD", "if0_39155495_librerira");
 
     if ($conexion->connect_error) {
         die("Error de conexión: " . $conexion->connect_error);
